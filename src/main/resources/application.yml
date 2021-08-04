@@ -10,3 +10,10 @@ spring:
   redis:
     port: ${REDIS_PORT}
     host: ${REDIS_IP}
+
+naver:
+  client:
+    id: ${NAVER_CLIENT_ID}
+    key: ${NAVER_CLIENT_KEY}
+  api:
+    baseurl: ${NAVER_SEARCH_URL}
