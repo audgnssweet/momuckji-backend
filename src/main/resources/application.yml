@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  redis:
+    port: ${REDIS_PORT}
+    host: ${REDIS_IP}
