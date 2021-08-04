@@ -9,7 +9,7 @@ import org.springframework.web.context.request.WebRequest
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler
 
 @RestControllerAdvice
-class GlobalExceptionHandler : ResponseEntityExceptionHandler(){
+class GlobalExceptionHandler : ResponseEntityExceptionHandler() {
 
     @ExceptionHandler(MomuckjiException::class)
     fun handleMomuckjiException(exception: MomuckjiException, request: WebRequest): ResponseEntity<Any> {

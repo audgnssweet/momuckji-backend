@@ -19,5 +19,4 @@ data class NaverSearchRes(
         val mapx: Int,
         val mapy: Int,
     )
-
 }

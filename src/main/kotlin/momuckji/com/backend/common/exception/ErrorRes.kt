@@ -9,7 +9,7 @@ data class ErrorRes(
     val errorCode: String,
     val message: String
 ) {
-    constructor(httpStatus: HttpStatus, errorCode: String, message: String): this(
+    constructor(httpStatus: HttpStatus, errorCode: String, message: String) : this(
         timestamp = LocalDateTime.now(),
         status = httpStatus.value(),
         errorCode = errorCode,
