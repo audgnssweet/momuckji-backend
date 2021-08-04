@@ -16,6 +16,9 @@ jobs:
     env:
       REDIS_IP: ${{secrets.REDIS_IP}}
       REDIS_PORT: ${{secrets.REDIS_PORT}}
+      NAVER_CLIENT_ID: ${{secrets.NAVER_CLIENT_ID}}
+      NAVER_CLIENT_KEY: ${{secrets.NAVER_CLIENT_KEY}}
+      NAVER_SEARCH_URL: ${{secrets.NAVER_SEARCH_URL}}
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 11
