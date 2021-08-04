@@ -17,3 +17,4 @@ naver:
     key: ${NAVER_CLIENT_KEY}
   api:
     baseurl: ${NAVER_SEARCH_URL}
+    
