@@ -15,9 +15,19 @@ class RestaurantApi(
     private val naverRestaurantSearcher: NaverRestaurantSearcher,
 ) {
 
-    @GetMapping("")
+    /**
+     * @deprecated 카카오 API로 대체되었다. 추후에 Naver API를 사용할 가능성이 있기에 남겨둔다.
+     */
+    @GetMapping("/naver")
     @ResponseStatus(HttpStatus.OK)
-    fun getRestaurants(req: NaverSearchReq): NaverRestaurantsRes {
+    fun getNaverRestaurants(req: NaverSearchReq): NaverRestaurantsRes {
         return naverRestaurantSearcher.search(req)
     }
+
+    @GetMapping("")
+    @ResponseStatus(HttpStatus.OK)
+    fun getKakaoRestaurants() {
+        
+    }
+
 }
