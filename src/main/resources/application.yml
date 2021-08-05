@@ -17,3 +17,8 @@ naver:
     key: ${NAVER_CLIENT_KEY}
   api:
     baseurl: ${NAVER_SEARCH_URL}
+
+kakao:
+  api:
+    key: ${KAKAO_REST_API_KEY}
+    url: ${KAKAO_SEARCH_URL}
